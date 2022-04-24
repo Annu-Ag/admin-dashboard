@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />-->
+    <link href="css/adminStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!--navbar starts here-->
+    <section id="menu">
+        <div class="items">
+            <ul class="">
+                <li><a href="#"><i class="fa-duotone fa fa-house" title="Home"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa fa-phone" title="Contact"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa fa-user" title="User Info"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa fa-people-group" title="connection"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-credit-card" title="card"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake" title="Partners"></i></a></li>
+                <li><a href="#"><i class="fa fa-briefcase" aria-hidden="true" title="Business"></i></a></li>
+                <li><a href="#"><i class="fa fa-check-square" aria-hidden="true" title="Checklist"></i></a></li>
+                <li><a href="#"><i class="fa fa-bullhorn" aria-hidden="true" title="Announcement"></i></a></li>
+
+            </ul>
+
+        </div>
+
+    </section>
+    <section id="interface">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="#">Toolyt</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <!--  <li class="active"><a href="#">TEAM <span class="sr-only">(current)</span></a></li>-->
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">REPORTS</a></li>
+                        <li><a href="#">FINANCE</a></li>
+                        <li><a href="#">OTHERS</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa-solid fa-download"></i></a></li>
+                        <li class="dropdown">
+                            <a href="#" onmouseover='mouseOverToggle()' onmouseout='mouseOutToggle()' id='new'>demoadmin<span class="caret"></span></a>
+                            <ul id='newDropDown' class="new dropdown">
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Access</a></li>
+                                <li><a href="#">Others</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-gear"></i><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--navbar ends here-->
+        <div class="row">
+            <div class="col-xs-2 menudiv">
+                <section id="menutwo">
+                    <div>
+                        View Leads
+                    </div>
+
+                    <div>
+
+                        <hr />
+                    </div>
+
+                    <div>
+                        <b>Filter By</b>
+                    </div>
+                    <div class="FilterButton">
+                        <div class="col-xs-6 FB">
+                            <button type="button" class="btn btn-info">Active</button>
+                        </div>
+                        <div class="col-xs-6 FB">
+                            <button type="button" class="btn btn-light">Lost</button>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div>
+                            Created
+                        </div>
+                        <div>
+                            Select Created Date
+                        </div>
+
+                        <hr />
+
+                    </div>
+                    <div>
+                        <div>
+                            Updated
+                        </div>
+                        <div>
+                            Select Updated Date
+                        </div>
+                        <div>
+                            <hr />
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            Last Visited Date
+                        </div>
+                        <div>
+                            Select Last Visited Date
+                        </div>
+                        <div>
+                            <hr />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            Gobal Region
+                        </div>
+                        <div>
+                            Nothing Selected
+                        </div>
+                        <div>
+                            <hr />
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="main">
+                <div class="col-xs-10  navtwo">
+                    <div class="col-xs-3 data">
+                        <div class="col-xs-2 td"><a href="#"><i class="fa-solid fa-table-list"></i></a></div>
+                        <div class="col-xs-2 td"><a href="#"><i class="fa-solid fa-table-cells"></i></a></div>
+                        <div class="col-xs-2 td"><a href="#"><i class="fa-solid fa-chart-column"></i></a></div>
+                        <div class="col-xs-2 td"><a href="#"><i class="fa-solid fa-location-dot"></i></a></div>
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-2 td"><a href="#"><i class="fa-solid fa-bookmark"></i></a></div>
+
+                    </div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-3 data">
+                        <div class="col-xs-5 tdtext">303 Entries</div>
+                        <div class="col-xs-5 td"><a href="#"><i class="fa-solid fa-arrow-down-wide-short"></i>Relevance</a></div>
+                    </div>
+                    <div class="col-xs-3 data">
+                        <div class="col-xs-2 tr">
+                            <select name="page" id="page">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-2 tr"><a href="nextPage()"><i class="fa-solid fa-angle-right"></i></a></div>
+                        <div class="col-xs-2 tr"><a href="#"><i class="fa-solid fa-angles-right"></i></a></div>
+
+
+                        <div class="col-xs-2 tr">
+                            <select name="page" id="page1">
+                                <option value="10">10</option>
+                                <option value="9">9</option>
+                                <option value="8">8</option>
+                                <option value="7">7</option>
+                                <option value="6">6</option>
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-4 tr">
+
+                            <input type="text" id="myinput" style="width: 45px; height: 18px;border:none" placeholder="Search" onkeyup="searchFunc()" />
+                            <i class="fa fa-search"></i>
+
+                        </div>
+                    </div>
+                    <div class="">
+                        <hr />
+                    </div>
+
+                </div>
+                <div class="interfacemain">
+                    <div class="col-xs-10 navthree">
+                        <div class="col-xs-1 cal">
+                            <div class="num">301</div>
+
+                            Total
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">1</div>
+
+                            Yet To Contact
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">158</div>
+
+                            First Call
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">24</div>
+
+                            Evaluation
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">16</div>
+
+                            Met
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">57</div>
+
+                            Interested
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">12</div>
+
+                            Approved
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">13</div>
+
+                            Business Understanding
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">4</div>
+
+                            Abc
+                        </div>
+                        <div class="col-xs-1 cal">
+                            <div class="num">10</div>
+
+                            Contract Singing
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-xs-10 userdata">
+                    <table class="table-data" id="myTable">
+                        <tr>
+                            <td>
+                                <i class="fa fa-user" aria-hidden="true"></i><span class="user">AMJAD</span>
+                                <br />
+                                <i class="fa-solid fa-bookmark"></i>Again Testing Customer version
+                                <br />
+                                <i class="fa-solid fa-location-dot"></i>Tamil Nadu
+                            </td>
+                            <td class="created">
+                                CREATED <i class="fa-solid fa-palette gr"></i><i class="fa-solid fa-palette or"></i>
+                                <br />
+                                <span class="date">09 Dec 2016 05:37 PM, 5 years ago</span>
+                            </td>
+                            <td class="created">
+                                ASSIGNED TO
+                            </td>
+                            <td class="created">
+                                EXPECTED VALUE
+                                <br />
+                                <span class="date">0.00 </span>
+                            </td>
+                            <td class="created">
+                                STATUS
+                                <br />
+                                <button type="button" class="btn btn-success">Contract Signing</button>
+                            </td>
+                            <td class="created">
+                                SOURCE
+                                <br />
+                                <button type="button" class="btn btn-dark">Events</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fa fa-user" aria-hidden="true"></i><span class="user">TOOLYT TESTING CUSTOMER</span>
+                                <br />
+                                <i class="fa-solid fa-bookmark"></i>ID: 472014
+                                <br />
+
+                            </td>
+                            <td class="created">
+                                CREATED <i class="fa-solid fa-palette gr"></i><i class="fa-solid fa-palette or"></i>
+                                <br />
+                                <span class="date">19 Dec 2016 05:37 PM, 5 years ago</span>
+                            </td>
+                            <td class="created">
+                                ASSIGNED TO
+                            </td>
+                            <td class="created">
+                                EXPECTED VALUE
+                                <br />
+                                <span class="date">12,323,00 </span>
+                            </td>
+                            <td class="created">
+                                STATUS
+                                <br />
+                                <button type="button" class="btn btn-success">Abc</button>
+                            </td>
+                            <td class="created">
+                                SOURCE
+                                <br />
+                                <button type="button" class="btn btn-dark">AA Testing</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fa fa-user" aria-hidden="true"></i><span class="user">FARMER</span>
+                                <br />
+                                <i class="fa-solid fa-bookmark"></i>Assign ID: 1527
+                                <br />
+                                <i class="fa-solid fa-location-dot"></i>Karnataka
+                            </td>
+                            <td class="created">
+                                CREATED <i class="fa-solid fa-palette gr"></i><i class="fa-solid fa-palette or"></i>
+                                <br />
+                                <span class="date">05 Apr 2021 12:51 PM, 1 years ago</span>
+                            </td>
+                            <td class="created">
+                                ASSIGNED TO
+                            </td>
+                            <td class="created">
+                                EXPECTED VALUE
+                                <br />
+                                <span class="date">0.00 </span>
+                            </td>
+                            <td class="created">
+                                STATUS
+                                <br />
+                                <button type="button" class="btn btn-success">Business Undrstanding</button>
+                            </td>
+                            <td class="created">
+                                SOURCE
+                                <br />
+                                <button type="button" class="btn btn-dark">Events</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
